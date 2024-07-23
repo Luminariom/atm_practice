@@ -1,0 +1,135 @@
+body, html {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #F8F9FA;
+  color: #32127a;
+  background: url('/static/images/main1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  /*8background: #e059a86a;
+  color: #e88cf2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+  padding: 10px 20px;
+  text-align: right;
+  
+}
+
+header button {
+  color: hsl(0, 0%, 100%);
+  background: #efefef;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+header button:hover {
+  background: #32127a;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.profile, .bank-details {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile {
+  height: 600px; /* Задаём фиксированную высоту */
+  overflow: auto; /* Добавляем прокрутку, если содержимое превышает высоту */
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px; /* Padding inside the input fields */
+  margin-top: 5px; /* Increase top margin for more space between fields */
+  margin-bottom: 20px; /* Optionally, add space below each field */
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #32127a;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+button {
+  width: 100%;
+  padding: 15px 25px; /* Slightly larger padding for better clickability */
+  margin-top: 20px; /* Space above the button */
+  margin-bottom: 15px; /* Space below the button if needed */
+  background-color: #32127a;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #32127a;
+}
+
+.delete-account {
+  background-color: #FFFFFF;  /* White background by default */
+  color: #32127a;  /* Vibrant pink color for text */
+  border: 2px solid #32127a;  /* Solid pink border */
+  box-sizing: border-box;  /* Include padding and border in the element's total width and height */
+  cursor: pointer;  /* Indicates that the element is clickable */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;  /* Smooth transitions for color and border changes */
+  border-radius: 5px;  /* Rounded corners for a softer look */
+}
+
+.delete-account:hover {
+  background-color: #32127a;  /* Red background on hover */
+  color: #FFFFFF;  /* White text on hover */
+  border: 2px solid #32127a;  /* Red border to match the background */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #efefef;
+}
+
+.success {
+  color: #32127a;
+}
+
+.error {
+  color: #32127a;
+}
+
+input[readonly] {
+  background-color: #32127a; /* Light grey background to indicate non-editability */
+  color: #efefef; /* Dim text color */
+}
+
+label {
+  display: block;
+  margin-bottom: 2px; /* Уменьшает расстояние между меткой и полем ввода */
+  font-size: 16px; /* Установите размер шрифта по желанию */
+}
